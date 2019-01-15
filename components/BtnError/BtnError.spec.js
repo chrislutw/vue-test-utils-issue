@@ -32,6 +32,7 @@ describe('BtnError', () => {
 
   test('clicked is true after click', () => {
     const wrapper = factory()
+    wrapper.vm.visible = true
     wrapper.find('button').trigger('click')
     expect(wrapper.vm.clicked).toBe(true)
   })
